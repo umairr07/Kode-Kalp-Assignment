@@ -54,7 +54,7 @@ function Signup() {
 
         setTimeout(() => {
           navigate("/confirmation");
-        }, 3000);
+        }, 1500);
       }
     } catch (error) {
       return handleError(error);
