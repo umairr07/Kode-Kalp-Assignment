@@ -28,10 +28,15 @@ export const signup = async (req, res) => {
         service: "gmail",
         host: "smtp.gmail.com",
         port: 587,
-        secure: false, // use TLS
+        logger: true,
+        debug: true,
+        secure: true,
         auth: {
             user: process.env.USER_EMAIL,
             pass: process.env.USER_PASS
+        },
+        tls: {
+            rejectUnauthorized: true
         }
     });
 
