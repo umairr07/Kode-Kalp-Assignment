@@ -50,7 +50,7 @@ export const signup = async (req, res) => {
           If you did not request this, please ignore this email.
       
           Regards,
-          The Team
+          Umer Shaikh
         `,
         html: `
           <div style="font-family: Arial, sans-serif; text-align: center;">
@@ -59,7 +59,7 @@ export const signup = async (req, res) => {
               Thank you for signing up for our service. To complete your registration, please confirm your email address by clicking the button below:
             </p>
             <a 
-              href="http://localhost:5173/login" 
+              href="https://kode-kalp-assignment.onrender.com/api/v1/user/login" 
               style="display: inline-block; margin: 20px 0; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; font-size: 16px; border-radius: 5px;"
               target="_self"
             >
@@ -69,7 +69,7 @@ export const signup = async (req, res) => {
               If you didn't sign up for this account, you can safely ignore this email.
             </p>
             <p style="font-size: 14px; color: #999;">
-              Regards,<br/>The Team
+              Regards,<br/>Umer Shaikh
             </p>
           </div>
         `
