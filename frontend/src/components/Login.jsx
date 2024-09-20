@@ -27,11 +27,16 @@ function Login() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/v1/user/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(loginData),
-      });
+      const response = await fetch(
+        "https://backend-kodekalp.onrender.com/api/v1/user/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+          credentials: "include",
+          body: JSON.stringify(loginData),
+        }
+      );
 
       const result = await response.json();
 

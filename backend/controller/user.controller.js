@@ -28,15 +28,10 @@ export const signup = async (req, res) => {
         service: "gmail",
         host: "smtp.gmail.com",
         port: 587,
-        logger: true,
-        debug: true,
-        secure: true,
+        secure: false, // use TLS
         auth: {
             user: process.env.USER_EMAIL,
             pass: process.env.USER_PASS
-        },
-        tls: {
-            rejectUnauthorized: true
         }
     });
 
@@ -50,7 +45,7 @@ export const signup = async (req, res) => {
           Thank you for signing up!
       
           Please confirm your email address by clicking the link below:
-          https://kode-kalp-assignment.onrender.com/api/v1/user/login
+          https://kode-kalp-assignment.vercel.app/login
       
           If you did not request this, please ignore this email.
       
@@ -64,7 +59,7 @@ export const signup = async (req, res) => {
               Thank you for signing up for our service. To complete your registration, please confirm your email address by clicking the button below:
             </p>
             <a 
-              href="https://kode-kalp-assignment.onrender.com/api/v1/user/login" 
+              href="https://kode-kalp-assignment.vercel.app/login" 
               style="display: inline-block; margin: 20px 0; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; font-size: 16px; border-radius: 5px;"
               target="_self"
             >

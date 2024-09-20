@@ -7,7 +7,10 @@ import cors from "cors"
 const app = express()
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://kode-kalp-assignment.vercel.app', // Replace with your frontend domain
+    credentials: true,
+}))
 
 const PORT = process.env.PORT || 3000
 
