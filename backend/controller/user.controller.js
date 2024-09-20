@@ -45,7 +45,7 @@ export const signup = async (req, res) => {
           Thank you for signing up!
       
           Please confirm your email address by clicking the link below:
-          http://localhost:5173/login
+          https://kode-kalp-assignment.onrender.com/api/v1/user/login
       
           If you did not request this, please ignore this email.
       
