@@ -4,8 +4,41 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    navigate("/signup");
+  const handleLogout = async () => {
+    try {
+      const res = await fetch(
+        "https://backend-kodekalp.onrender.com/api/v1/user/logout",
+        {
+          method: "GET", // Keep GET since the backend requires it
+          credentials: "include", // Ensure cookies are sent
+          headers: {
+            "Content-Type": "application/json", // Ensure proper content type
+          },
+        }
+      );
+
+      // Check if the response is OK
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
+      const data = await res.json();
+      console.log("Logout response data:", data); // Log full response
+
+      if (data.message) {
+        console.log("Logout message:", data.message);
+      }
+
+      // Check success flag to determine next action
+      if (data.message === "User logged out successfully") {
+        console.log("Logout successful");
+        navigate("/"); // Redirect to home page
+      } else {
+        console.log("Logout failed: No success message received");
+      }
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
   };
 
   return (

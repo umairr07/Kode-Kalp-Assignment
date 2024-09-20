@@ -40,7 +40,7 @@
 
 Clone the repository:
 
-`bash
+`-bash
 Copy code
 git clone https://github.com/yourusername/your-repo.git`
 
