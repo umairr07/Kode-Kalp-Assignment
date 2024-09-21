@@ -41,28 +41,24 @@
 ### Clone the repository:
 
 ```-bash
-Copy code
 git clone https://github.com/yourusername/your-repo.git
 ```
 
 ### Navigate to the project directory:
 
 ```bash
-Copy code
 cd your-repo
 ```
 
 ## Install dependencies:
 
 ```bash
-Copy code
 npm install
 ```
 
 ### Set up environment variables by creating a .env file in the root directory:
 
 ```makefile
-Copy code
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-password
 JWT_SECRET=your-jwt-secret
@@ -72,7 +68,6 @@ MONGO_URI=your-mongo-connection-string
 ### Run the server:
 
 ```bash
-Copy code
 npm start
 ```
 
