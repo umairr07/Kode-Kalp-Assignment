@@ -38,39 +38,43 @@
 
 ## 🛠️ Installation & Setup
 
-Clone the repository:
+### Clone the repository:
 
-`-bash
+```-bash
 Copy code
-git clone https://github.com/yourusername/your-repo.git`
+git clone https://github.com/yourusername/your-repo.git
+```
 
-## Navigate to the project directory:
+### Navigate to the project directory:
 
-`bash
+```bash
 Copy code
-cd your-repo`
+cd your-repo
+```
 
 ## Install dependencies:
 
-`bash
+```bash
 Copy code
-npm install`
+npm install
+```
 
-Set up environment variables by creating a .env file in the root directory:
+### Set up environment variables by creating a .env file in the root directory:
 
-`makefile
+```makefile
 Copy code
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-app-password
 JWT_SECRET=your-jwt-secret
-MONGO_URI=your-mongo-connection-string`
+MONGO_URI=your-mongo-connection-string
+```
 
-Run the server:
+### Run the server:
 
-`bash
+```bash
 Copy code
 npm start
-`
+```
 
 ## 💻 Tech Stack
 
