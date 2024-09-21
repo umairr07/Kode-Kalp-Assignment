@@ -68,7 +68,7 @@ MONGO_URI=your-mongo-connection-string
 ### Run the server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## 💻 Tech Stack
