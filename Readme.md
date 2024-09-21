@@ -41,7 +41,7 @@
 ### Clone the repository:
 
 ```-bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/umairr07/Kode-Kalp-Assignment.git
 ```
 
 ### Navigate to the project directory:
